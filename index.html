@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/startPage.css">
+    <title>Quiz App</title>
+    <script src="js/soundConfig.js" defer></script>
+    <script src="js/game.js" defer></script>
+</head>
+<body onload="soundOn()">
+    <!-- Configura a musica do game -->
+    <audio src="audio/trilhaSonora.mp3" id="trilha-sonora"></audio>
+    <button id="soundOff" class="sound-bttn" onclick="soundOff()">Mute</button>
+    <button id="soundOn" class="sound-bttn" onclick="soundOn()">Play</button>
+
+    <div class="conteiner-First-Page">
+
+        <!-- Inicia o Game -->
+        <div class="box-start-quiz box-option" onclick="startGame()">
+            
+            <span class="options-txt" onclick="startGame()">Start</span>
+
+        </div>
+
+        <!-- Jogo -->
+        <div class="box-game" id="firstQuiz">
+
+            <!-- Questão do quiz -->
+            <div class="box-question">
+
+                <p class="question-txt">Quem é o Atual Presidente do Brasil ?</p>
+
+            </div>
+
+            <!-- Opções de resposta do Quiz -->
+            <div class="box-options-response">
+                <p class="responses-txt" onclick="showSecondQuiz()">Jair Bolsonaro</p>
+                <p class="responses-txt correctAnswer " id="correctAnswer" 
+                onclick="showSecondQuiz()" >Luiz Inacio Lula</p>
+                <p class="responses-txt" onclick="showSecondQuiz()">Ciro Gomes</p>
+            </div>
+
+        </div>
+        <!-- Jogo -->
+        <div class="box-game" id="secondQuiz">
+
+            <!-- Questão do quiz -->
+            <div class="box-question">
+
+                <p class="question-txt">Qual a cor do Ceu ?</p>
+
+            </div>
+
+            <!-- Opções de resposta do Quiz -->
+            <div class="box-options-response">
+                <p class="responses-txt" onclick="showThirdQuiz()">Verde Agua</p>
+                <p class="responses-txt" onclick="showThirdQuiz()">Azul Marinho</p>
+                <p class="responses-txt correctAnswer" onclick="showThirdQuiz()">Azul claro</p>
+            </div>
+
+        </div>
+        <!-- Jogo -->
+        <div class="box-game" id="thirdQuiz">
+
+            <!-- Questão do quiz -->
+            <div class="box-question">
+
+                <p class="question-txt">Quanto é 2 + 5 * (7 + 9) ?</p>
+
+            </div>
+
+            <!-- Opções de resposta do Quiz -->
+            <div class="box-options-response">
+                <p class="responses-txt" onclick="showResult()">112</p>
+                <p class="responses-txt" onclick="showResult()">64</p>
+                <p class="responses-txt correctAnswer" onclick="showResult()">82</p>
+            </div>
+
+        </div>
+
+        <div class="resultBox">
+
+            <span class="result-txt">0</span>
+
+            <p class="textResult-txt">Você teve 0 acertos!</p>
+
+        </div>
+
+    </div>
+</body>
+</html>

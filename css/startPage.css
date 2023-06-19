@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(https://img.freepik.com/vetores-premium/padrao-sem-emenda-de-parede-de-tijolo-vermelho-de-pixel-arte-vetorial-design-de-8-bits-para-aplicativos-moveis-de-logotipo-de-adesivos_168129-1526.jpg?w=360);
+}
+.conteiner-First-Page{
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 250px;
+    min-width: 330px;
+    max-width: 30rem;
+    max-height: 450px;
+    height: 30rem;
+    width: 100%;
+    background: linear-gradient(45deg , rgba(80, 43, 43, 0.808), #291717ef);
+    box-shadow: 5px 5px 10px #000;
+    border-radius: .3rem;
+    overflow: hidden;
+}
+.box-option{
+    border: 1px solid #000;
+    padding: 1.3rem 1.5rem;
+    border-radius: .9rem;
+    background: linear-gradient(160deg, rgb(137, 0, 201), #3c0074);
+    background-position: top center;
+    cursor: pointer;
+    transition: 1.3s;
+    position: relative;
+    top: 110%;
+    left: 0%;
+    transform: translate(-0%,-0%);
+}
+
+.options-txt{
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+.sound-bttn{
+    position: fixed;
+    top: 10px;
+    right: 100px;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 1px solid #000;
+    background-color: #3c0074;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+#soundOn {
+    right: 200px;
+}
+
+.box-game-transparent{
+    display: none;
+    transition: 1s;
+}
+
+/* Jogo Visivel */
+
+.box-game{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #000;
+    border-radius: 5%;
+    min-height: 60%;
+    min-width: 60%;
+    max-height: 70%;
+    max-width: 70%;
+    padding: 1rem;
+    transition: 1.5s;
+    background-color: #fcfcfc;
+
+    position: relative;
+    bottom: -160%;
+}
+
+.box-question {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: .3rem .6rem;
+    background-color: #ec6a2d;
+    border-radius: .5rem;
+    transition: .5s;
+}
+.question-txt {
+    text-align: center;
+    color: #000;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 3px #fcfcfc;
+    transition: .5s;
+}
+
+.box-options-response {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: .3rem;
+    padding: .3rem .6rem;
+    min-height: 60%;
+    max-height: 65%;
+    min-width: 80%;
+    max-width: 95%;
+    opacity: 1;
+    transition: .5s;
+
+}
+
+
+.responses-txt {
+    color: #fff;
+    background-color: #523d3d93;
+    padding: .5rem;
+    border-radius: .7rem;
+    text-align: center;
+    box-shadow: 3px 3px 5px #000;
+    font-size: .9rem;
+    cursor: pointer ;
+    transition: .3s;
+}
+.responses-txt:hover {
+    background-color: #523d3d;
+}
+
+.resultBox {
+    position: relative;
+    left: -100%;
+    bottom: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    border: 2px solid #000;
+    padding: 1rem .5rem;
+    min-height: 12rem;
+    background-color: #fcfcfc;
+    opacity: .3;
+    transition: 2s;
+}
+.result-txt {
+    font-size: 5rem;
+    color: #37006b;
+}
+.textResult-txt {
+    font-size: 1.2rem;
+    text-align: center;
+
+}
